@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+}
+ 
+
+h1 {
+    margin-bottom: 30px;
+}
+ 
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+ 
+
+.bloco {
+    width: 250px;
+    height: 200px;
+    background-color: #dcdcdc;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+ 
+
+.detalhes {
+    display: none;
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+ 
+
+.bloco:hover {
+    background-color: yellow;
+    color: red;
+}
+ 
+
+.bloco:hover .detalhes {
+    display: block;
+}
